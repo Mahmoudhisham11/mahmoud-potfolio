@@ -3,7 +3,7 @@ export type Lang = "en" | "ar";
 export const EN = {
   n_work: "work", n_about: "about", n_services: "services", n_journey: "journey", n_terminal: "terminal", n_contact: "contact",
   m_work: "Work", m_about: "About", m_services: "Services", m_journey: "Journey", m_terminal: "Terminal", m_contact: "Contact",
-  avail: "available for work", eyebrow: "Mahmoud Hisham · Software Engineer · Cairo",
+  avail: "available for work", eyebrow: "Mahmoud Hisham · Founder of Devora",
   h1a: "I turn ideas", h1b: "into", h1c: "shipped", h1d: "products.",
   lede: "I design and build <b>web apps, dashboards and backends</b> — for shops, factories and companies. Clean code in, real products out.",
   cta1: "View my work", cta2: "Open terminal", st_p: "projects shipped", st_c: "paying clients", st_y: "writing code",
@@ -36,7 +36,7 @@ export type Key = keyof typeof EN;
 export const AR: Partial<Record<Key, string>> = {
   n_work: "أعمالي", n_about: "عنّي", n_services: "خدماتي", n_journey: "رحلتي", n_terminal: "التيرمنال", n_contact: "تواصل",
   m_work: "أعمالي", m_about: "عنّي", m_services: "خدماتي", m_journey: "رحلتي", m_terminal: "التيرمنال", m_contact: "تواصل",
-  avail: "متاح لشغل جديد", eyebrow: "محمود هشام · مهندس برمجيات · القاهرة",
+  avail: "متاح لشغل جديد", eyebrow: "محمود هشام · مؤسس Devora",
   h1a: "بحوّل الأفكار", h1b: "لمنتجات", h1c: "شغّالة", h1d: "بجد.",
   lede: "بصمم وببني <b>مواقع ولوحات تحكم وباك إند</b> — للمحلات والمصانع والشركات. كود نضيف يطلع منه منتج حقيقي.",
   cta1: "شوف أعمالي", cta2: "افتح التيرمنال", st_p: "مشروع اتسلّم", st_c: "عميل بيدفع", st_y: "سنين برمجة",

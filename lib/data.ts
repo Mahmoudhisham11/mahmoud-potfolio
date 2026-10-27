@@ -22,7 +22,7 @@ export const SITE = {
   city: "Cairo",
   country: "EG",
   company: "Devora",
-  title: "Mahmoud Hisham (محمود هشام) — Software Engineer in Cairo",
+  title: "Mahmoud Hisham (محمود هشام) — Software Engineer & Founder of Devora",
   description:
     "Mahmoud Hisham (محمود هشام) is a software engineer in Cairo, Egypt, and founder of Devora. He builds web apps, dashboards and backends with Next.js, PHP, Python and JavaScript for shops, factories and companies.",
   descriptionAr:

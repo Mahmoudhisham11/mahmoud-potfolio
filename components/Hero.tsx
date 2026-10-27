@@ -293,7 +293,7 @@ export default function Hero() {
           </p>
           <h1 className="hero__title">
             <span className="sr-only">
-              {SITE.fullName} ({SITE.fullNameAr}) — {SITE.jobTitle}.{" "}
+              {SITE.fullName} ({SITE.fullNameAr}) — {SITE.jobTitle} &amp; Founder of {SITE.company}.{" "}
             </span>
             <span className="line">
               <span style={{ ["--i" as string]: 0 }}>{t("h1a")}</span>
