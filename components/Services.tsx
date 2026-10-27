@@ -2,7 +2,7 @@
 
 import { useApp } from "./providers";
 import { Html, Reveal, Scramble } from "./ui";
-import type { Key } from "@/lib/i18n";
+import { EN, type Key } from "@/lib/i18n";
 
 function Body({ n, tag, k }: { n: string; tag: string; k: "sv1" | "sv2" | "sv3" }) {
   const { t } = useApp();
@@ -14,7 +14,9 @@ function Body({ n, tag, k }: { n: string; tag: string; k: "sv1" | "sv2" | "sv3" 
       <Html as="h3" html={t(k)} />
       <Html as="p" html={t((k + "p") as Key)} />
       <ul>
-        {(["a", "b", "c"] as const).map((x) => (
+        {(["a", "b", "c"] as const)
+          .filter((x) => k + x in EN)
+          .map((x) => (
           <li key={x} dangerouslySetInnerHTML={{ __html: t((k + x) as Key) }} />
         ))}
       </ul>
