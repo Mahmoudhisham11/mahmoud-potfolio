@@ -36,6 +36,17 @@
 3. من Sitemaps اكتب `sitemap.xml` → Submit.
 4. من URL Inspection اكتب `https://mahmoudhisham.online` → Request indexing.
 
+## 3.5) Bing (عشان يظهر في Microsoft Edge و Yahoo و DuckDuckGo)
+**الطريقة السريعة — IndexNow (من غير حساب):** بعد ما Vercel يعمل deploy، افتح اللينك ده مرة واحدة في أي متصفح:
+https://www.bing.com/indexnow?url=https://mahmoudhisham.online/&key=57ccc5de0a01b6f806f02e41ca5473c4
+لو الصفحة فاضية أو بيضا من غير رسالة خطأ = اتبعت بنجاح. (الكود ده هو محتوى الملف `public/57ccc5de0a01b6f806f02e41ca5473c4.txt` — متمسحوش.)
+بعد كده، بعد أي تعديل كبير: `npm run indexnow` من فولدر المشروع.
+
+**الطريقة الكاملة — Bing Webmaster Tools (مستحسنة كمان):**
+1. https://www.bing.com/webmasters → سجّل دخول بحساب Google.
+2. **Import from Google Search Console** → اختار الموقع.
+3. Sitemaps → `https://mahmoudhisham.online/sitemap.xml` → Submit.
+
 ## 4) حاجات بتفرق جدًا في ظهور اسمك وصورتك
 - لينكات حساباتك (TikTok و Instagram و Facebook و GitHub) متحطوطة في `lib/data.ts` ومتسجلة في الـ structured data (sameAs)
   اللي بتربط اسمك بالموقع عند جوجل. لو عملت LinkedIn ضيفه في `profiles`.
